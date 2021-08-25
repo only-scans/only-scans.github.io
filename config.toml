@@ -1,3 +1,29 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "https://only-scans.com/"
+title = "only-scans"
+theme = "newsroom"
+author = "Cedi"
+copyright = "Copyright © 2021, Cedric Kienzler; all rights reserved."
+canonifyurls = true
+paginate = 12
+
+[markup]
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = false # change to true to enable inclusion of rawHTML and math functions
+    xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
+    tabWidth = 2
+
+# ids used below are not valid. Replace with valid ones
+[params]
+  # locale = "en_US"
+  twitter = "@c3di1"
+  disableDarkMode = true
+  # mainSections = ["blog", "docs"] see https://gohugo.io/functions/where/#mainsections
