@@ -1,29 +1,76 @@
-baseurl = "https://only-scans.com/"
-title = "only-scans"
-theme = "newsroom"
-author = "Cedi"
-copyright = "Copyright © 2021, Cedric Kienzler; all rights reserved."
-canonifyurls = true
-paginate = 12
+################################# Default configuration ###################
+baseURL = "https://examplesite.com"
+title = "Only-Scans"
+theme = "meghna-cedi"
+# post pagination
+paginate = "12"
+# post excerpt
+summaryLength = "0"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = []
 
-[markup]
-  [markup.goldmark.renderer]
-    hardWraps = false
-    unsafe = false # change to true to enable inclusion of rawHTML and math functions
-    xhtml = false
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = false
-    noClasses = false
-    tabWidth = 2
+############################# Plugins ##########################
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
 
-# ids used below are not valid. Replace with valid ones
-[params]
-  # locale = "en_US"
-  twitter = "@c3di1"
-  disableDarkMode = true
-  # mainSections = ["blog", "docs"] see https://gohugo.io/functions/where/#mainsections
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/lazy-load/lozad.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/map.js"
+
+################### English Navigation ########################
+[[Languages.en.menu.main]]
+name = "home"
+url = "#"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "portfolio"
+url = "#portfolio"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "blog"
+url = "#blog"
+weight = 3
+
+############################# social icons ##########################
+[[params.social]]
+icon = "ti-instagram" # themify icon pack : https://themify.me/themify-icons
+link = "https://instagram.com/_only_scans_"
+
+[[params.social]]
+icon = "ti-twitter" # themify icon pack : https://themify.me/themify-icons
+link = "https://twitter.com/c3di1"
+
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/"
+weight = 1
+home = "Home"
+copyright = "Copyright &copy; 2021 Cedric Kienzler"

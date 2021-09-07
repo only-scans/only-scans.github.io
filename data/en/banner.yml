@@ -1,0 +1,10 @@
+############################### Banner ################################
+banner:
+  enable: true
+  bg_image: "images/backgrounds/hero-area.jpg"
+  hero_images:
+    - image: "images/backgrounds/hero-area.jpg"
+  button:
+    enable: true
+    label: "View Portfolio"
+    link: "#portfolio"
