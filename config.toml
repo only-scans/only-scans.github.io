@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://examplesite.com"
+baseURL = "https://only-scans.github.io"
 title = "Only-Scans"
 theme = "meghna-cedi"
 # post pagination
